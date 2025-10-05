@@ -7,6 +7,4 @@ app.use(express.json());
 
 app.use("/", routes);
 
-console.log(routes.stack);
-
 module.exports = app;
