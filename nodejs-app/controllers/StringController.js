@@ -1,9 +1,9 @@
-const StringService = require("../services/StringService");
+const stringService = require("../services/stringService");
 
 const checkString = (request, response) => {
     const { text, key } = request.query;
 
-    const result = StringService.containsKey(text, key);
+    const result = stringService.containsKey(text, key);
 
     response.status(200).json({
         route: "check-string",

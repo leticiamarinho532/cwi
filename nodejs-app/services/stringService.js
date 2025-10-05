@@ -1,4 +1,4 @@
-const StringService = {
+const stringService = {
 
     /**
      * @param {string} text 
@@ -21,4 +21,4 @@ const StringService = {
     }
 }
 
-module.exports = StringService;
+module.exports = stringService;

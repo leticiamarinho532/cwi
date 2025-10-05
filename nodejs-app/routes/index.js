@@ -1,6 +1,6 @@
 const express = require("express");
-const stringRoutes = require("./StringRoutes");
-const healthRoutes = require("./HealthRoutes");
+const stringRoutes = require("./stringRoutes");
+const healthRoutes = require("./healthRoutes");
 
 const router = express.Router();
 
