@@ -5,8 +5,8 @@ const checkString = (request, response) => {
 
     const result = StringService.containsKey(text, key);
 
-    response.json({
-        route: "validar-string",
+    response.status(200).json({
+        route: "check-string",
         text,
         key,
         result
