@@ -3,7 +3,7 @@ const stringService = {
     /**
      * @param {string} text 
      * @param {string} key 
-     * @returns {boolean}
+     * @returns {string}
      */
     containsKey: (text, key) => {
         if (typeof text !== "string" || typeof key !== "string") {
