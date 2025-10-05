@@ -13,7 +13,11 @@ const StringService = {
         const formatedText = text.trim().toLowerCase();
         const formatedKey = key.trim().toLowerCase();
 
-        return formatedText.includes(formatedKey);
+        if (formatedText.includes(formatedKey)) {
+            return `O texto contém ${formatedKey}`;
+        }
+        
+        return `O texto não contém ${formatedKey}`;
     }
 }
 
