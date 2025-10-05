@@ -34,6 +34,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./nodejs-app:/usr/src/app
+      - /usr/src/app/node_modules
     expose:
       - "3000"
     networks:
