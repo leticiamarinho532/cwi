@@ -6,10 +6,6 @@ const stringService = {
      * @returns {string}
      */
     containsKey: (text, key) => {
-        if (typeof text !== "string" || typeof key !== "string") {
-            return false;
-        }
-
         const formatedText = text.trim().toLowerCase();
         const formatedKey = key.trim().toLowerCase();
 
