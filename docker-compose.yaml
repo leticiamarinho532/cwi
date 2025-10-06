@@ -7,6 +7,9 @@ services:
     volumes:
       - ./php-app:/var/www/html
       - ./default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php-app
+      - nodejs-app
     networks:
       - app-network
 
