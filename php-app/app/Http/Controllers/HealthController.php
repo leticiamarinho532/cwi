@@ -14,7 +14,7 @@ class HealthController extends Controller
         $this->healthService = $service;
     }
 
-    public function index()
+    public function handle()
     {
         $result = $this->healthService->verify();
 

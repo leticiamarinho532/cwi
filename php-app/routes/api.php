@@ -8,6 +8,6 @@ use App\Http\Controllers\ExternalController;
 
 Route::apiResource('users', UserController::class);
 
-Route::get('/health', [HealthController::class, 'index']);
+Route::get('/health', [HealthController::class, 'handle']);
 
 Route::get('/external', [ExternalController::class, 'handle']);
