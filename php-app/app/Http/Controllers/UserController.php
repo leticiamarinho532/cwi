@@ -89,6 +89,6 @@ class UserController extends Controller
             return response()->json(['error' => $result['message']], 500);
         }
 
-        return response()->json($result['message'], 200);
+        return response()->json(['message' => $result['message']], 200);
     }
 }
