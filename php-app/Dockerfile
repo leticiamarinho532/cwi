@@ -23,6 +23,7 @@ RUN composer install --no-interaction --prefer-dist --optimize-autoloader
 
 RUN mkdir -p storage bootstrap/cache database \
     && touch database/database.sqlite \
-    && chown -R www-data:www-data storage bootstrap/cache database
+    && chown -R www-data:www-data storage bootstrap/cache database \
+    && chmod -R 775 storage bootstrap/cache database
 
 USER www-data
