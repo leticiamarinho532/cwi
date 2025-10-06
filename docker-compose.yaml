@@ -25,6 +25,8 @@ services:
     expose:
       - "9000"
     user: "www-data"
+    depends_on:
+      - db
     networks:
       - app-network
 
@@ -38,6 +40,17 @@ services:
     expose:
       - "3000"
     command: npm run dev
+    networks:
+      - app-network
+
+  db:
+    image: mysql:8
+    restart: always
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: techchallenge
+      MYSQL_DATABASE: techchallenge
     networks:
       - app-network
 
