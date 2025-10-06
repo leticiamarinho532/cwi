@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'nodejs' => [
+        'url' => env('NODEJS_URL', 'http://nodejs-app:3000/check-string'),
+    ],
+
 ];
